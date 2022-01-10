@@ -1,0 +1,24 @@
+﻿/****** Object:  Table [dbo].[Employee]    Script Date: 10-01-2022 17:18:54 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Employee](
+	[EmployeeId] [int] IDENTITY(1,1) NOT NULL,
+	[EmployeeName] [nvarchar](50) NULL,
+	[DateOfBirth] [nvarchar](50) NULL,
+	[Gender] [nvarchar](50) NULL,
+	[CurrentAddress] [nvarchar](50) NULL,
+	[PermanentAddress] [nvarchar](50) NULL,
+	[City] [nvarchar](50) NULL,
+	[Nationality] [nvarchar](50) NULL,
+	[PINCode] [nchar](10) NULL,
+ CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED 
+(
+	[EmployeeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
